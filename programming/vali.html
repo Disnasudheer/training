@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width,initial-scale=1.0">
+    </head>
+    <link rel="stylesheet" href="../css/validate.css"> 
+    <body>
+        <h1>Registration Form</h1>
+        <form id="Registration" onsubmit="return validate()">
+
+            <p>
+                <span>Username : <input type="text" id="fullname"
+                        name="Fullname" /></span>
+            </p>
+            <div id="error1"></div>
+
+            <p>
+                <span>Password : <input type="password" id="password"
+                        name="password" /></span>
+            </p>
+            <div id="error2"></div>
+            <p>
+                <span>E-mail : <input type="email" id="email"
+                        name="password" /></span>
+            </p>
+            <div id="error3"></div>
+            <p>
+                <span>Phone : <input type="number" id="Phone"
+                        name="password" /></span>
+            </p>
+            <div id="error4"></div>
+            <div class="main-class">
+                <h4>Gender</h4>
+                <ul style="list-style-type:none;">
+                    <li><input type="radio"
+                            name="Gender"
+                            value="Male" />
+                        Male
+                    </li>
+                    <li><input type="radio"
+                            name="Gender"
+                            value="Female" />
+                        Female
+                    </li>
+                    <li><input type="radio"
+                            name="Gender"
+                            value="Other" />
+                        Other
+                    </li>
+                </ul>
+                
+
+                <input type="submit" value="Register" />
+            </div>
+
+        </form>
+        
+                <script src="../js/vali.js"></script>
+    </body>
+</html>
